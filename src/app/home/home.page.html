@@ -1,4 +1,5 @@
 <ion-content>
+  <h1><b>CIGARROMÊTRO</b></h1>
   <ion-item>
     <ion-label>Qtd de cigarros/dia</ion-label>
     <ion-input type="number" [(ngModel)]="cigarrosPorDia" placeholder="Ex: 5"></ion-input>
@@ -7,7 +8,7 @@
     <ion-label>Qtd anos fumando</ion-label>
     <ion-input type="number" [(ngModel)]="anosFumando" placeholder="Ex: 10"></ion-input>
   </ion-item>
-  <ion-button (click)="calcular()">Calcular</ion-button>
-  <h3>Você perdeu:</h3>
+  <ion-button (click)="calcular()"><b>Calcular</b></ion-button>
+  <h3><b>VOCÊ PERDEU:</b></h3>
   <h1>{{diasPerdidos.toFixed(0)}} dias</h1>
 </ion-content>
